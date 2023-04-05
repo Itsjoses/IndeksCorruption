@@ -11,9 +11,15 @@ class SurveyAnswerController extends Controller
     //
     public function index(){
         $question = DB::table('questions')->get();
-        $users = DB::table('users')->get();
+        $users = DB::table('participants')->get();
+        $city = DB::table('cities')->get();
 //        dd($question);
 
-        return view('Answer.Question',['questions' => $question,'users' => $users]);
+        return view('Answer.Question',['questions' => $question,'users' => $users,'cities' => $city]);
     }
+
+    public function AnswerDisplay(){
+
+    }
+
 }

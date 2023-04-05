@@ -3338,16 +3338,16 @@
         },
         {
             "name": "symfony/event-dispatcher-contracts",
-            "version": "v3.2.0",
+            "version": "v3.2.1",
             "source": {
                 "type": "git",
                 "url": "https://github.com/symfony/event-dispatcher-contracts.git",
-                "reference": "0782b0b52a737a05b4383d0df35a474303cabdae"
+                "reference": "0ad3b6f1e4e2da5690fefe075cd53a238646d8dd"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/symfony/event-dispatcher-contracts/zipball/0782b0b52a737a05b4383d0df35a474303cabdae",
-                "reference": "0782b0b52a737a05b4383d0df35a474303cabdae",
+                "url": "https://api.github.com/repos/symfony/event-dispatcher-contracts/zipball/0ad3b6f1e4e2da5690fefe075cd53a238646d8dd",
+                "reference": "0ad3b6f1e4e2da5690fefe075cd53a238646d8dd",
                 "shasum": ""
             },
             "require": {
@@ -3397,7 +3397,7 @@
                 "standards"
             ],
             "support": {
-                "source": "https://github.com/symfony/event-dispatcher-contracts/tree/v3.2.0"
+                "source": "https://github.com/symfony/event-dispatcher-contracts/tree/v3.2.1"
             },
             "funding": [
                 {
@@ -3413,7 +3413,7 @@
                     "type": "tidelift"
                 }
             ],
-            "time": "2022-11-25T10:21:52+00:00"
+            "time": "2023-03-01T10:32:47+00:00"
         },
         {
             "name": "symfony/finder",
@@ -4909,16 +4909,16 @@
         },
         {
             "name": "symfony/translation-contracts",
-            "version": "v3.2.0",
+            "version": "v3.2.1",
             "source": {
                 "type": "git",
                 "url": "https://github.com/symfony/translation-contracts.git",
-                "reference": "68cce71402305a015f8c1589bfada1280dc64fe7"
+                "reference": "dfec258b9dd17a6b24420d464c43bffe347441c8"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/symfony/translation-contracts/zipball/68cce71402305a015f8c1589bfada1280dc64fe7",
-                "reference": "68cce71402305a015f8c1589bfada1280dc64fe7",
+                "url": "https://api.github.com/repos/symfony/translation-contracts/zipball/dfec258b9dd17a6b24420d464c43bffe347441c8",
+                "reference": "dfec258b9dd17a6b24420d464c43bffe347441c8",
                 "shasum": ""
             },
             "require": {
@@ -4970,7 +4970,7 @@
                 "standards"
             ],
             "support": {
-                "source": "https://github.com/symfony/translation-contracts/tree/v3.2.0"
+                "source": "https://github.com/symfony/translation-contracts/tree/v3.2.1"
             },
             "funding": [
                 {
@@ -4986,7 +4986,7 @@
                     "type": "tidelift"
                 }
             ],
-            "time": "2022-11-25T10:21:52+00:00"
+            "time": "2023-03-01T10:32:47+00:00"
         },
         {
             "name": "symfony/var-dumper",

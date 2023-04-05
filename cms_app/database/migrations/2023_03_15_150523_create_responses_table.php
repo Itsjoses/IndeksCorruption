@@ -21,6 +21,7 @@ class CreateResponsesTable extends Migration
             $table->foreign("city_id")->references("id")->on("cities")->onUpdate("cascade")->onDelete("cascade");
             $table->unsignedBigInteger("survey_id");
             $table->foreign("survey_id")->references("id")->on("surveys")->onUpdate("cascade")->onDelete("cascade");
+            $table->integer('corruption_index');
             $table->timestamps();
             $table->unique(["participant_id", "city_id", "survey_id"]);
         });

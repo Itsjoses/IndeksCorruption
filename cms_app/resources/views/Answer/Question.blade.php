@@ -11,8 +11,29 @@
 <body>
 <div class="Container">
     <div class="Semi-Container">
+
+
+
         <form action="{{route('answerSubmit')}}" method="POST">
             @csrf
+            <div>
+                <select name="user_id" id="">
+                    @foreach($users as $user)
+                        <option value="{{$user->id}}">{{$user->name}}</option>
+                    @endforeach
+                </select>
+            </div>
+
+            <div>
+                <select name="city_id" id="">
+                    @foreach($cities as $city)
+                        <option value="{{$city->id}}">{{$city->name}}</option>
+                    @endforeach
+
+                </select>
+            </div>
+
+
             @foreach($questions as $data)
                 <div class="Form">
                     <div class="InsertTitle">

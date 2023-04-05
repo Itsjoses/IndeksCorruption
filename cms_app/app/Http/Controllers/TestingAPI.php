@@ -2,6 +2,11 @@
 
 namespace App\Http\Controllers;
 
+use App\Models\Answer;
+use App\Models\DimensionResult;
+use App\Models\IndicatorResult;
+use App\Models\Response;
+use Illuminate\Database\Eloquent\Model;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\DB;
 use Illuminate\Support\Facades\Http;
@@ -12,7 +17,11 @@ class TestingAPI extends Controller
     {
         $question = DB::table('questions')->get();
         $length = count($request->Answer);
+
         $indikator = DB::table('indicators')->get();
+
+
+
 
         //indikator
         $indikatorarray = array_fill(0,count($indikator),0);
@@ -56,9 +65,43 @@ class TestingAPI extends Controller
         $data = json_decode($response->body());
 
         $prediction = $data->prediction[0];
-        dd($indikatorarray,$dimensionarray,$prediction);
+//        dd($indikatorarray,$dimensionarray,$prediction);
         // Process the data
-        return view('Answer.Question', ['datas' => $prediction]);
 
+        $reponses = new Response();
+
+        $reponses->participant_id = $request->input('user_id');
+        $reponses->city_id = $request->input('city_id');
+        $reponses->survey_id = 2;
+        $reponses->corruption_index = $prediction;
+        $reponses->save();
+
+        for($i =0;$i<$length;$i++){
+            $Answers = new Answer();
+            $Answers->response_id = $reponses->id;
+            $Answers->question_id = $i+1;
+            $Answers->answer_key = $request->Answer[$i+1];
+            $Answers->save();
+        }
+
+
+        for($i =0;$i<count($dimensi);$i++){
+            $dimensionResult = new DimensionResult();
+            $dimensionResult->response_id = $reponses->id;
+            $dimensionResult->dimension_id = $i+1;
+            $dimensionResult->dimension_index = $dimensionarray[$i];
+            $dimensionResult->Save();
+        }
+
+        for($i =0;$i<count($indikator);$i++){
+            $indicatorResult = new IndicatorResult();
+            $indicatorResult->response_id = $reponses->id;
+            $indicatorResult->indicator_id = $i+1;
+            $indicatorResult->indicator_index = $indikatorarray[$i];
+            $indicatorResult->save();
+        }
+
+        return view('Answer.testing', ['dimensions' => $dimensionarray,'indikators'=>$indikatorarray,'result'=>$prediction,
+            'showindikator'=>$indikator,'showdimension'=>$dimensi]);
     }
 }

@@ -28,5 +28,23 @@ class DimensionSeeder extends Seeder
             "created_at" => Carbon::now()->toDateTimeString(),
             "updated_at" => Carbon::now()->toDateTimeString()
         ]);
+        DB::table("dimensions")->insert([
+            "survey_id" => 2,
+            "name" => "Pemimpinan Wilayah",
+            "created_at" => Carbon::now()->toDateTimeString(),
+            "updated_at" => Carbon::now()->toDateTimeString()
+        ]);
+        DB::table("dimensions")->insert([
+            "survey_id" => 2,
+            "name" => "Pembagian Kekuasaan",
+            "created_at" => Carbon::now()->toDateTimeString(),
+            "updated_at" => Carbon::now()->toDateTimeString()
+        ]);
+        DB::table("dimensions")->insert([
+            "survey_id" => 2,
+            "name" => "Dimensi 5",
+            "created_at" => Carbon::now()->toDateTimeString(),
+            "updated_at" => Carbon::now()->toDateTimeString()
+        ]);
     }
 }

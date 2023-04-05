@@ -15,41 +15,41 @@ class ResponseSeeder extends Seeder
      */
     public function run()
     {
-        //
-        DB::table("responses")->insert([
-            "participant_id" => 1,
-            "city_id" => 1,
-            "survey_id" => 2,
-            "created_at" => Carbon::now()->toDateTimeString(),
-            "updated_at" => Carbon::now()->toDateTimeString()
-        ]);
-        DB::table("responses")->insert([
-            "participant_id" => 2,
-            "city_id" => 1,
-            "survey_id" => 2,
-            "created_at" => Carbon::now()->toDateTimeString(),
-            "updated_at" => Carbon::now()->toDateTimeString()
-        ]);
-        DB::table("responses")->insert([
-            "participant_id" => 3,
-            "city_id" => 1,
-            "survey_id" => 2,
-            "created_at" => Carbon::now()->toDateTimeString(),
-            "updated_at" => Carbon::now()->toDateTimeString()
-        ]);
-        DB::table("responses")->insert([
-            "participant_id" => 4,
-            "city_id" => 1,
-            "survey_id" => 2,
-            "created_at" => Carbon::now()->toDateTimeString(),
-            "updated_at" => Carbon::now()->toDateTimeString()
-        ]);
-        DB::table("responses")->insert([
-            "participant_id" => 5,
-            "city_id" => 1,
-            "survey_id" => 2,
-            "created_at" => Carbon::now()->toDateTimeString(),
-            "updated_at" => Carbon::now()->toDateTimeString()
-        ]);
+//        //
+//        DB::table("responses")->insert([
+//            "participant_id" => 1,
+//            "city_id" => 1,
+//            "survey_id" => 2,
+//            "created_at" => Carbon::now()->toDateTimeString(),
+//            "updated_at" => Carbon::now()->toDateTimeString()
+//        ]);
+//        DB::table("responses")->insert([
+//            "participant_id" => 2,
+//            "city_id" => 1,
+//            "survey_id" => 2,
+//            "created_at" => Carbon::now()->toDateTimeString(),
+//            "updated_at" => Carbon::now()->toDateTimeString()
+//        ]);
+//        DB::table("responses")->insert([
+//            "participant_id" => 3,
+//            "city_id" => 1,
+//            "survey_id" => 2,
+//            "created_at" => Carbon::now()->toDateTimeString(),
+//            "updated_at" => Carbon::now()->toDateTimeString()
+//        ]);
+//        DB::table("responses")->insert([
+//            "participant_id" => 4,
+//            "city_id" => 1,
+//            "survey_id" => 2,
+//            "created_at" => Carbon::now()->toDateTimeString(),
+//            "updated_at" => Carbon::now()->toDateTimeString()
+//        ]);
+//        DB::table("responses")->insert([
+//            "participant_id" => 5,
+//            "city_id" => 1,
+//            "survey_id" => 2,
+//            "created_at" => Carbon::now()->toDateTimeString(),
+//            "updated_at" => Carbon::now()->toDateTimeString()
+//        ]);
     }
 }

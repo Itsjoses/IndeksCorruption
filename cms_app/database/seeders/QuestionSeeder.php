@@ -42,6 +42,21 @@ class QuestionSeeder extends Seeder
             "created_at" => Carbon::now()->toDateTimeString(),
             "updated_at" => Carbon::now()->toDateTimeString()
         ]);
+
+        DB::table("questions")->insert([
+            "indicator_id" => 2,
+            "name" => " Apakah Peraturan disini sangat layak?",
+            "created_at" => Carbon::now()->toDateTimeString(),
+            "updated_at" => Carbon::now()->toDateTimeString()
+        ]);
+        DB::table("questions")->insert([
+            "indicator_id" => 2,
+            "name" => "Apakah Peraturan diwilayah ini didukung oleh masyarakat",
+            "created_at" => Carbon::now()->toDateTimeString(),
+            "updated_at" => Carbon::now()->toDateTimeString()
+        ]);
+
+
         DB::table("questions")->insert([
             "indicator_id" => 3,
             "name" => "Petugas meminta pungutan lebih untuk menyelesaikan layanan yang diberikan.",
@@ -54,5 +69,102 @@ class QuestionSeeder extends Seeder
             "created_at" => Carbon::now()->toDateTimeString(),
             "updated_at" => Carbon::now()->toDateTimeString()
         ]);
+
+        DB::table("questions")->insert([
+            "indicator_id" => 4,
+            "name" => "Apakah pembangunan Disini sangat mantap?",
+            "created_at" => Carbon::now()->toDateTimeString(),
+            "updated_at" => Carbon::now()->toDateTimeString()
+        ]);
+        DB::table("questions")->insert([
+            "indicator_id" => 4,
+            "name" => "Apakah Pembangunan berjalan dengan sangat cepat?",
+            "created_at" => Carbon::now()->toDateTimeString(),
+            "updated_at" => Carbon::now()->toDateTimeString()
+        ]);
+
+        DB::table("questions")->insert([
+            "indicator_id" => 5,
+            "name" => "Apakah Pembangunan jalan disini sudah cepat?",
+            "created_at" => Carbon::now()->toDateTimeString(),
+            "updated_at" => Carbon::now()->toDateTimeString()
+        ]);
+        DB::table("questions")->insert([
+            "indicator_id" => 5,
+            "name" => "Apakah jalan yang ada diwilayah ini banyak yang rusak?",
+            "created_at" => Carbon::now()->toDateTimeString(),
+            "updated_at" => Carbon::now()->toDateTimeString()
+        ]);
+
+
+        DB::table("questions")->insert([
+            "indicator_id" => 6,
+            "name" => "pertanyaan1?",
+            "created_at" => Carbon::now()->toDateTimeString(),
+            "updated_at" => Carbon::now()->toDateTimeString()
+        ]);
+        DB::table("questions")->insert([
+            "indicator_id" => 6,
+            "name" => "pertanyaan2?",
+            "created_at" => Carbon::now()->toDateTimeString(),
+            "updated_at" => Carbon::now()->toDateTimeString()
+        ]);
+
+
+        DB::table("questions")->insert([
+            "indicator_id" => 7,
+            "name" => "pertanyaan1 indikator2?",
+            "created_at" => Carbon::now()->toDateTimeString(),
+            "updated_at" => Carbon::now()->toDateTimeString()
+        ]);
+        DB::table("questions")->insert([
+            "indicator_id" => 7,
+            "name" => "pertanyaan2 indikator2?",
+            "created_at" => Carbon::now()->toDateTimeString(),
+            "updated_at" => Carbon::now()->toDateTimeString()
+        ]);
+
+
+        DB::table("questions")->insert([
+            "indicator_id" => 8,
+            "name" => "pertanyaan1 indikator1 dimensi2?",
+            "created_at" => Carbon::now()->toDateTimeString(),
+            "updated_at" => Carbon::now()->toDateTimeString()
+        ]);
+        DB::table("questions")->insert([
+            "indicator_id" => 8,
+            "name" => "pertanyaan2 indikator1 dimensi2?",
+            "created_at" => Carbon::now()->toDateTimeString(),
+            "updated_at" => Carbon::now()->toDateTimeString()
+        ]);
+
+
+        DB::table("questions")->insert([
+            "indicator_id" => 9,
+            "name" => "pertanyaan1 indikator2 dimensi2?",
+            "created_at" => Carbon::now()->toDateTimeString(),
+            "updated_at" => Carbon::now()->toDateTimeString()
+        ]);
+        DB::table("questions")->insert([
+            "indicator_id" => 9,
+            "name" => "pertanyaan2 indikator2 dimensi2?",
+            "created_at" => Carbon::now()->toDateTimeString(),
+            "updated_at" => Carbon::now()->toDateTimeString()
+        ]);
+
+
+        DB::table("questions")->insert([
+            "indicator_id" => 10,
+            "name" => "pertanyaan1 indikator3?",
+            "created_at" => Carbon::now()->toDateTimeString(),
+            "updated_at" => Carbon::now()->toDateTimeString()
+        ]);
+        DB::table("questions")->insert([
+            "indicator_id" => 10,
+            "name" => "pertanyaan2 indikator3",
+            "created_at" => Carbon::now()->toDateTimeString(),
+            "updated_at" => Carbon::now()->toDateTimeString()
+        ]);
+
     }
 }
