@@ -1,0 +1,72 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+.Container{
+    width: 100vw;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    background-color: #00DBDE;
+    background-image: linear-gradient(90deg, #00DBDE 0%, #FC00FF 100%);
+}
+
+.Form{
+    padding: 1rem 0;
+}
+
+.InsertForm{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.InsertForm,.InsertTitle{
+    padding: .5rem 0;
+}
+
+.InsertFrom-Inner{
+    display: flex;
+    justify-content: space-between;
+    width: 5%;
+}
+
+.Semi-Container{
+    background-color: rgb(255, 255, 255);
+    margin: 50px;
+    padding: 50px;
+    border-radius: 10px;
+}
+
+.button{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.buttonInput {
+    width: 60%;
+    background-image: linear-gradient(to right, #314755 0%, #26a0da  51%, #314755  100%);
+    margin: 10px;
+    padding: 15px 45px;
+    text-align: center;
+    text-transform: uppercase;
+    transition: 0.5s;
+    background-size: 200% auto;
+    color: white;
+    box-shadow: 0 0 20px #eee;
+    border-radius: 10px;
+    display: block;
+    border: none;
+}
+
+.buttonInput:hover {
+    background-position: right center; /* change the direction of the change here */
+    color: #fff;
+    text-decoration: none;
+}
+
+
+
+
